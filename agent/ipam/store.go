@@ -80,8 +80,6 @@ func (m *IPAM) StoreSetup() error {
 }
 
 // Subnet
-//
-//
 func (s *kvStore) ListSubNets() ([]*SubNet, error) {
 	kvPairs, err := s.kv.List(s.normalize(""))
 	if err != nil {
@@ -170,8 +168,6 @@ func (s *kvStore) RemoveSubNet(id string) error {
 }
 
 // Subnet IPs
-//
-//
 func (s *kvStore) ListIPs(subnetID string) ([][2]string, error) {
 	kvPairs, err := s.kv.List(s.normalize(subnetID, keyPool))
 	if err != nil {

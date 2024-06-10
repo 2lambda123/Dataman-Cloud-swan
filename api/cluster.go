@@ -242,7 +242,6 @@ func (r *Server) getAppTraffics(w http.ResponseWriter, req *http.Request) {
 }
 
 // utils
-//
 func (r *Server) redirectAgent(stripN int, w http.ResponseWriter, req *http.Request) {
 	var (
 		id    = mux.Vars(req)["agent_id"]
